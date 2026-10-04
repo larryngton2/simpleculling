@@ -1,6 +1,6 @@
-package com.example.examplemod.mixins;
+package gr.larryngton.simpleculling.mixins;
 
-import com.example.examplemod.util.ICullingEntity;
+import gr.larryngton.simpleculling.util.ICullingEntity;
 import net.minecraft.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;

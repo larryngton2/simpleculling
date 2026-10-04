@@ -1,7 +1,7 @@
 {
   "compatibilityLevel": "JAVA_8",
-  "package": "com.example.examplemod.mixins",
-  "refmap": "mixins.examplemod.refmap.json",
+  "package": "gr.larryngton.simpleculling.mixins",
+  "refmap": "mixins.simpleculling.refmap.json",
   "minVersion": "0.7.11",
   "client": [
     "MixinMinecraftTest",

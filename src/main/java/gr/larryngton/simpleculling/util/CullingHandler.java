@@ -1,4 +1,4 @@
-package com.example.examplemod.util;
+package gr.larryngton.simpleculling.util;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;

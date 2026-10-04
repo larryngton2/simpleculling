@@ -1,4 +1,4 @@
-package com.example.examplemod.util;
+package gr.larryngton.simpleculling.util;
 
 public interface ICullingEntity {
     boolean simpleculling$shouldRender();

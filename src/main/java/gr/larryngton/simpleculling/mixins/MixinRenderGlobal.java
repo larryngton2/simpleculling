@@ -1,6 +1,6 @@
-package com.example.examplemod.mixins;
+package gr.larryngton.simpleculling.mixins;
 
-import com.example.examplemod.util.CullingHandler;
+import gr.larryngton.simpleculling.util.CullingHandler;
 import net.minecraft.client.renderer.RenderGlobal;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.Entity;

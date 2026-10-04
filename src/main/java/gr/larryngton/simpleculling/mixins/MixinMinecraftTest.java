@@ -1,4 +1,4 @@
-package com.example.examplemod.mixins;
+package gr.larryngton.simpleculling.mixins;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
