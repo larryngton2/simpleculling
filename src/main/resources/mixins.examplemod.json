@@ -3,9 +3,12 @@
   "package": "com.example.examplemod.mixins",
   "refmap": "mixins.examplemod.refmap.json",
   "minVersion": "0.7.11",
-  "mixins": [],
   "client": [
-    "mc.client.MixinMinecraftTest"
+    "MixinMinecraftTest",
+    "MixinRenderGlobal"
   ],
-  "server": []
+  "server": [],
+  "mixins": [
+    "MixinEntity"
+  ]
 }
