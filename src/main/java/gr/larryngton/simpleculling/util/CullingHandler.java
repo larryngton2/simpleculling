@@ -72,7 +72,7 @@ public class CullingHandler {
             return;
         }
 
-        long delay = (long) Math.min(500, mc.thePlayer.getDistanceToEntity(entity) * 10);
+        long delay = (long) Math.min(250, mc.thePlayer.getDistanceToEntity(entity) * 5);
         ScheduledFuture<?> future = CULLING_EXECUTOR.schedule(() -> {
             try {
                 updateCulling(entity);
@@ -118,9 +118,12 @@ public class CullingHandler {
         return ((ICullingEntity) entity).simpleculling$shouldRender();
     }
 
-    private static boolean canRayPassThrough(BlockPos pos) { // todo check for barrier
+    private static boolean canRayPassThrough(BlockPos pos) {
         Block block = mc.theWorld.getBlockState(pos).getBlock();
-        return !block.isFullCube();
+        if (!block.isFullCube()) {
+            return true;
+        }
+        return !block.isOpaqueCube();
     }
 
     public static void postRender(Entity entity, float partialTicks) {
