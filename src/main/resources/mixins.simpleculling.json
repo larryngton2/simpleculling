@@ -4,11 +4,11 @@
   "refmap": "mixins.simpleculling.refmap.json",
   "minVersion": "0.7.11",
   "client": [
-    "MixinMinecraftTest",
+    "MixinEntity",
+    "MixinEntityRenderer",
     "MixinRenderGlobal"
   ],
   "server": [],
   "mixins": [
-    "MixinEntity"
   ]
 }

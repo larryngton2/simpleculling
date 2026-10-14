@@ -1,6 +1,7 @@
 package gr.larryngton.simpleculling;
 
-import gr.larryngton.simpleculling.util.CullingHandler;
+import gr.larryngton.simpleculling.util.EntityCullingHandler;
+import gr.larryngton.simpleculling.util.MainCullingHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -9,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 public class SimpleCulling {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(new CullingHandler());
+        MinecraftForge.EVENT_BUS.register(new EntityCullingHandler());
+        MinecraftForge.EVENT_BUS.register(new MainCullingHandler());
     }
 }
